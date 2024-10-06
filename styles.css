@@ -62,7 +62,7 @@ header ul li a {
 /* Hero Section */
 #hero {
     background: radial-gradient(circle at top left, #ff5764, #007bff);
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,7 +70,7 @@ header ul li a {
 }
 
 .hero-content {
-    max-width: 500px; /* Limit the width of the text */
+    max-width: 600px; /* Limit the width of the text */
 }
 
 .hero-content h1 {
@@ -107,8 +107,14 @@ header ul li a {
 }
 
 /* Placeholder for hero image */
+.hero-graphic {
+    display: flex;
+    justify-content: flex-end; /* Aligns the graphic to the right */
+    align-items: center;
+}
+
 .hero-graphic img {
-    width: 300px;
+    width: 600px; /* Set the desired width for the graphic */
 }
 
 /* Scrolling Banner */
@@ -136,4 +142,65 @@ header ul li a {
     100% {
         transform: translateX(-100%);
     }
+}
+/* Features Section */
+
+/* Features Section */
+/* Features Section */
+/* Features Section */
+/* Features Section */
+#features {
+    .features-title {
+        background-color: rgba(255, 255, 255, 0.8); /* White background with reduced opacity */
+        padding: 20px;
+        margin-bottom: 30px; /* Space between title and features */
+        border-radius: 8px; /* Rounded corners */
+        text-align: center; /* Center the title text */
+    }
+    
+    .features-title h1 {
+        font-size: 36px; /* Huge font size */
+        font-weight: bold; /* Bold text */
+        color: #3a518b; /* Use a color that matches the theme */
+        margin: 0; /* Remove default margin */
+    }
+    
+    background: linear-gradient(135deg, #3a518b, #ff5764); /* Same gradient as the hero section */
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Set the background color with reduced opacity */
+    color: black; /* Text color for contrast */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.feature img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #3a518b; /* Heading color to match the gradient */
+}
+
+.feature p {
+    font-size: 16px;
+    color: #555; /* Darker gray for better readability */
 }
