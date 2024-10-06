@@ -62,11 +62,7 @@ header ul li a {
 /* Hero Section */
 #hero {
     background: radial-gradient(circle at top left, #ff5764, #007bff);
-<<<<<<< HEAD
     height: 100vh;
-=======
-    height: 80vh;
->>>>>>> ffba49f10e12788680ffce0ca5ab3f53ceb98874
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,11 +70,7 @@ header ul li a {
 }
 
 .hero-content {
-<<<<<<< HEAD
     max-width: 600px; /* Limit the width of the text */
-=======
-    max-width: 500px; /* Limit the width of the text */
->>>>>>> ffba49f10e12788680ffce0ca5ab3f53ceb98874
 }
 
 .hero-content h1 {
@@ -122,11 +114,7 @@ header ul li a {
 }
 
 .hero-graphic img {
-<<<<<<< HEAD
     width: 600px; /* Set the desired width for the graphic */
-=======
-    width: 300px; /* Set the desired width for the graphic */
->>>>>>> ffba49f10e12788680ffce0ca5ab3f53ceb98874
 }
 
 /* Scrolling Banner */
@@ -155,7 +143,6 @@ header ul li a {
         transform: translateX(-100%);
     }
 }
-<<<<<<< HEAD
 /* Features Section */
 
 /* Features Section */
@@ -178,55 +165,6 @@ header ul li a {
         margin: 0; /* Remove default margin */
     }
     
-=======
-
-/* Existing CSS for hero section or other parts of your website */
-
-/* Add the new CSS for the features section below */
-
-/* Features Section */
-/* Features Section */
-#features {
-    background: linear-gradient(135deg, #3a518b, #ff5764); /* Same gradient as the hero section */
-    padding: 60px 50px;
-    text-align: center;
-    color: white; /* Adjust text color for better readability */
-}
-
-.feature-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.feature {
-    flex: 1;
-    max-width: 300px;
-    text-align: center;
-    color: white; /* Keep text white to contrast with the gradient */
-}
-
-.feature img {
-    width: 80px;
-    margin-bottom: 20px;
-}
-
-.feature h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #ffffff; /* Set heading color to white */
-}
-
-.feature p {
-    font-size: 16px;
-    color: #ffffff; /* Set paragraph color to white */
-}
-/* Features Section */
-/* Features Section */
-#features {
->>>>>>> ffba49f10e12788680ffce0ca5ab3f53ceb98874
     background: linear-gradient(135deg, #3a518b, #ff5764); /* Same gradient as the hero section */
     padding: 60px 50px;
     text-align: center;
