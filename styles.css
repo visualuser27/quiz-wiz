@@ -5,202 +5,233 @@
     box-sizing: border-box;
 }
 
+/* Body Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f4f8;
-    color: #333;
+    font-family: 'Poppins', Arial, sans-serif; /* Use Poppins and fallback to Arial */
+    background: linear-gradient(to right, #ff5764, #007aff); /* Fluid gradient background */
+    color: #333; /* Dark text color for better readability */
 }
 
 /* Header */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Space out items evenly */
     align-items: center;
     padding: 20px;
-    position: relative; /* Added to handle absolute positioning of the enroll button */
+    background-color: white; /* Added background color for the header */
 }
 
 header .logo {
     color: #333;
     font-size: 24px;
     font-weight: bold;
+    margin-right: auto; /* Push the logo to the extreme left */
 }
 
-header ul {
-    list-style: none;
+nav {
     display: flex;
+    align-items: center;
+    gap: 20px; /* Space between navigation items */
 }
 
-header ul li {
-    margin-left: 20px;
+nav ul {
+    list-style: none;
+    display: flex; /* Use flex to align items */
+    margin: 0;
+    padding: 0;
 }
 
-header ul li a {
+nav ul li {
+    margin-left: 20px; /* Space between navigation items */
+}
+
+nav ul li a {
     text-decoration: none;
     color: #333;
+    font-weight: bold;
 }
 
-/* Adjusted position of the enroll button */
+/* Enroll Now Button */
 .enroll-btn {
-    color: #333;
+    background-color: #ff5764; /* Accent color */
+    color: white;
+    padding: 12px 24px; /* Increased padding for larger button */
     text-decoration: none;
     font-weight: bold;
-    padding: 8px 16px;
-    border: 2px solid #333;
-    border-radius: 50px;
-    transition: 0.3s;
-    position: absolute; /* Changed to absolute positioning */
-    right: 20px; /* Positioned 20px from the right */
-    top: 20px; /* Adjusted to align vertically with other elements */
+    border-radius: 50px; /* Rounded button */
+    transition: background-color 0.3s;
 }
 
+/* Button Hover Effect */
 .enroll-btn:hover {
-    background-color: #333;
-    color: #fff;
+    background-color: #e03e4e; /* Darker shade for hover effect */
 }
+
 
 /* Hero Section */
 #hero {
-    background: radial-gradient(circle at top left, #ff5764, #007bff);
-    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
+    padding: 50px; /* Padding for the hero section */
+    height: 100vh; /* Full height */
+    background: linear-gradient(to bottom right, #ff5764, #007bff); /* Elegant gradient */
 }
 
 .hero-content {
-    max-width: 600px; /* Limit the width of the text */
+    max-width: 600px; /* Max width for hero text */
 }
 
 .hero-content h1 {
-    font-size: 48px;
+    font-size: 70px; /* Main heading size */
     font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    text-align: left; /* Aligns the text to the left */
+    color: #ffffff; /* White text for contrast */
 }
 
 .hero-content p {
-    font-size: 18px;
+    font-size: 20px; /* Slightly larger font size for better readability */
     margin-bottom: 40px;
-    text-align: left; /* Aligns the paragraph to the left */
+    color: #ffffff; /* White text for contrast */
 }
 
-.cta-btn {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 50px;
-    transition: 0.3s;
-}
-
-.cta-btn:hover {
-    background-color: #0056b3;
-}
-
-.cta-btn span {
-    margin-left: 10px;
-}
-
-/* Placeholder for hero image */
+/* Hero Graphic */
 .hero-graphic {
     display: flex;
-    justify-content: flex-end; /* Aligns the graphic to the right */
+    justify-content: flex-end; /* Align graphic to the right */
     align-items: center;
 }
 
 .hero-graphic img {
-    width: 600px; /* Set the desired width for the graphic */
+    width: 600px; /* Maintain the width of the image */
 }
 
-/* Scrolling Banner */
-.scrolling-banner {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-}
-
-.scrolling-banner p {
-    display: inline-block;
-    animation: scrollText 10s linear infinite;
-}
-
-@keyframes scrollText {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-/* Features Section */
-
-/* Features Section */
-/* Features Section */
 /* Features Section */
 /* Features Section */
 #features {
-    .features-title {
-        background-color: rgba(255, 255, 255, 0.8); /* White background with reduced opacity */
-        padding: 20px;
-        margin-bottom: 30px; /* Space between title and features */
-        border-radius: 8px; /* Rounded corners */
-        text-align: center; /* Center the title text */
-    }
-    
-    .features-title h1 {
-        font-size: 36px; /* Huge font size */
-        font-weight: bold; /* Bold text */
-        color: #3a518b; /* Use a color that matches the theme */
-        margin: 0; /* Remove default margin */
-    }
-    
-    background: linear-gradient(135deg, #3a518b, #ff5764); /* Same gradient as the hero section */
-    padding: 60px 50px;
+    background: #ffffff; /* White background for a clean look */
+    padding: 60px 50px; /* Spacious padding */
+    text-align: center; /* Center text for features */
+}
+
+.features-title {
     text-align: center;
+    margin: 20px 0; /* Margin for spacing */
+}
+
+.features-title h1 {
+    font-size: 36px; /* Font size for features title */
+    font-weight: bold;
+    color: #3a518b; /* Match the theme */
 }
 
 .feature-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: space-around; /* Space around features */
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
+/* Feature Styles */
 .feature {
-    flex: 1;
-    max-width: 300px;
+    flex: 1; /* Flex basis for responsiveness */
+    max-width: 450px; /* Increased max width for larger boxes */
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Set the background color with reduced opacity */
-    color: black; /* Text color for contrast */
-    padding: 20px;
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    background-color: rgba(255, 255, 255, 0.95); /* Almost solid white */
+    color: black;
+    padding: 40px; /* Increased padding for larger feature boxes */
+    border-radius: 12px; /* Rounded corners for a smoother look */
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.15); /* Softer shadow for elegance */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+    margin: 20px; /* Margin around feature boxes */
 }
 
-.feature img {
-    width: 80px;
-    margin-bottom: 20px;
+/* Elevate and change shadow on hover for interactivity */
+.feature:hover {
+    transform: translateY(-8px); /* Elevate on hover */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
 .feature h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #3a518b; /* Heading color to match the gradient */
+    font-size: 26px; /* Increased heading size for prominence */
+    margin: 10px 0; /* Margin for spacing */
+    color: #3a518b; /* Theme color */
 }
 
 .feature p {
-    font-size: 16px;
+    font-size: 20px; /* Increased text size for better readability */
     color: #555; /* Darker gray for better readability */
+    line-height: 1.5; /* Improved line height for better readability */
+}
+
+/* Responsive Design for Feature Boxes */
+@media (max-width: 768px) {
+    .feature {
+        max-width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Margin for spacing between boxes */
+        padding: 20px; /* Reduced padding for smaller screens */
+    }
+}
+
+/* Explore Courses Button */
+.cta-btn {
+    display: inline-block; /* Inline block for button styling */
+    background-color: #007aff; /* Button background color */
+    color: white; /* Text color */
+    padding: 15px 30px; /* Padding for the button */
+    border-radius: 25px; /* Rounded corners for button */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+/* Button Hover Effect */
+.cta-btn:hover {
+    background-color: #005bb5; /* Darker shade for hover effect */
+}
+
+
+/* Footer Styles */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+}
+
+/* Scrolling Banner */
+.scrolling-banner {
+    background-color: #3a518b; /* Primary color */
+    color: white; /* Text color for scrolling banner */
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap; /* Prevent text wrap */
+    overflow: hidden; /* Hide overflow */
+    width: 100%;
+    position: fixed;
+    bottom: 0; /* Fixed at the bottom */
+}
+
+.scrolling-banner p {
+    display: inline-block;
+    animation: scroll 10s linear infinite; /* Scrolling animation */
+}
+
+/* Animation Keyframes */
+@keyframes scroll {
+    0% { transform: translateX(100%); } /* Start from right */
+    100% { transform: translateX(-100%); } /* End at left */
+}
+
+/* Features Section Title */
+#features {
+    background: #ffffff; /* White background for a clean look */
+    padding: 60px 50px; /* Spacious padding */
+    text-align: center; /* Center text for features */
+}
+
+.features-title h1 {
+    font-size: 36px; /* Font size for features title */
+    font-weight: bold;
+    color: #3a518b; /* Match the theme */
 }
