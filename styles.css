@@ -7,42 +7,42 @@
 
 /* Body Styles */
 body {
-    font-family: 'Poppins', Arial, sans-serif; /* Use Poppins and fallback to Arial */
-    background: linear-gradient(to right, #ff5764, #007aff); /* Fluid gradient background */
-    color: #333; /* Dark text color for better readability */
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(to right, #ff5764, #007aff); /* Consistent gradient across the body */
+    color: #333;
 }
 
 /* Header */
 header {
     display: flex;
-    justify-content: space-between; /* Space out items evenly */
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: white; /* Added background color for the header */
+    background-color: white;
 }
 
 header .logo {
     color: #333;
     font-size: 24px;
     font-weight: bold;
-    margin-right: auto; /* Push the logo to the extreme left */
+    margin-right: auto;
 }
 
 nav {
     display: flex;
     align-items: center;
-    gap: 20px; /* Space between navigation items */
+    gap: 20px;
 }
 
 nav ul {
     list-style: none;
-    display: flex; /* Use flex to align items */
+    display: flex;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin-left: 20px; /* Space between navigation items */
+    margin-left: 20px;
 }
 
 nav ul li a {
@@ -53,145 +53,307 @@ nav ul li a {
 
 /* Enroll Now Button */
 .enroll-btn {
-    background-color: #ff5764; /* Accent color */
+    background-color: #ff5764;
     color: white;
-    padding: 12px 24px; /* Increased padding for larger button */
+    padding: 12px 24px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 50px; /* Rounded button */
+    border-radius: 50px;
     transition: background-color 0.3s;
 }
 
-/* Button Hover Effect */
 .enroll-btn:hover {
-    background-color: #e03e4e; /* Darker shade for hover effect */
+    background-color: #e03e4e;
 }
-
 
 /* Hero Section */
 #hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px; /* Padding for the hero section */
-    height: 100vh; /* Full height */
-    background: linear-gradient(to bottom right, #ff5764, #007bff); /* Elegant gradient */
+    padding: 50px;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #ff5764, #007bff);
 }
 
 .hero-content {
-    max-width: 600px; /* Max width for hero text */
+    max-width: 600px;
 }
 
 .hero-content h1 {
-    font-size: 70px; /* Main heading size */
+    font-size: 70px;
     font-weight: bold;
-    color: #ffffff; /* White text for contrast */
+    color: #ffffff;
 }
 
 .hero-content p {
-    font-size: 20px; /* Slightly larger font size for better readability */
+    font-size: 20px;
     margin-bottom: 40px;
-    color: #ffffff; /* White text for contrast */
+    color: #ffffff;
 }
 
-/* Hero Graphic */
 .hero-graphic {
     display: flex;
-    justify-content: flex-end; /* Align graphic to the right */
+    justify-content: flex-end;
     align-items: center;
 }
 
 .hero-graphic img {
-    width: 600px; /* Maintain the width of the image */
+    width: 600px;
 }
 
 /* Features Section */
-/* Features Section */
 #features {
-    background: #ffffff; /* White background for a clean look */
-    padding: 60px 50px; /* Spacious padding */
-    text-align: center; /* Center text for features */
+    padding: 60px 50px;
+    text-align: center;
+    background: linear-gradient(to bottom right, #007aff, #ff5764); /* Same gradient to maintain continuity */
 }
 
 .features-title {
     text-align: center;
-    margin: 20px 0; /* Margin for spacing */
+    margin: 20px 0;
 }
 
 .features-title h1 {
-    font-size: 36px; /* Font size for features title */
+    font-size: 48px; /* Increased font size for 'Features' */
     font-weight: bold;
-    color: #3a518b; /* Match the theme */
+    color: #3a518b;
 }
 
 .feature-container {
     display: flex;
-    justify-content: space-around; /* Space around features */
+    justify-content: space-around;
     padding: 50px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    background-color: rgba(255, 255, 255, 0.8);
+    flex-wrap: wrap;
 }
 
 /* Feature Styles */
 .feature {
-    flex: 1; /* Flex basis for responsiveness */
-    max-width: 450px; /* Increased max width for larger boxes */
+    flex: 1;
+    max-width: 450px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.95); /* Almost solid white */
+    background-color: rgba(255, 255, 255, 0.95);
     color: black;
-    padding: 40px; /* Increased padding for larger feature boxes */
-    border-radius: 12px; /* Rounded corners for a smoother look */
-    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.15); /* Softer shadow for elegance */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
-    margin: 20px; /* Margin around feature boxes */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px;
+}
+#features {
+    padding: 60px 50px;
+    text-align: center;
+    background: linear-gradient(to bottom right, #007aff, #ff5764); /* Same gradient to maintain continuity */
 }
 
-/* Elevate and change shadow on hover for interactivity */
+.features-title {
+    text-align: center;
+    margin: 20px 0;
+    max-width: 400px; /* Set a max width for the title container */
+    margin-left: auto; /* Center the box horizontally */
+    margin-right: auto; /* Center the box horizontally */
+}
+
+.features-title h1 {
+    font-size: 70px; /* Increased font size for better visibility */
+    font-weight: bold;
+    color: white; /* Changed to white for better contrast */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Optional: Added shadow for better readability */
+}
+
 .feature:hover {
-    transform: translateY(-8px); /* Elevate on hover */
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .feature h2 {
-    font-size: 26px; /* Increased heading size for prominence */
-    margin: 10px 0; /* Margin for spacing */
-    color: #3a518b; /* Theme color */
+    font-size: 26px;
+    margin: 10px 0;
+    color: #3a518b;
 }
 
 .feature p {
-    font-size: 20px; /* Increased text size for better readability */
-    color: #555; /* Darker gray for better readability */
-    line-height: 1.5; /* Improved line height for better readability */
+    font-size: 20px;
+    color: #555;
+    line-height: 1.5;
 }
 
 /* Responsive Design for Feature Boxes */
 @media (max-width: 768px) {
     .feature {
-        max-width: 100%; /* Full width on smaller screens */
-        margin-bottom: 20px; /* Margin for spacing between boxes */
-        padding: 20px; /* Reduced padding for smaller screens */
+        max-width: 100%;
+        margin-bottom: 20px;
+        padding: 20px;
     }
 }
 
 /* Explore Courses Button */
 .cta-btn {
-    display: inline-block; /* Inline block for button styling */
-    background-color: #007aff; /* Button background color */
-    color: white; /* Text color */
-    padding: 15px 30px; /* Padding for the button */
-    border-radius: 25px; /* Rounded corners for button */
-    text-decoration: none; /* Remove underline */
-    font-size: 18px; /* Font size */
-    font-weight: bold; /* Bold text */
-    transition: background-color 0.3s; /* Smooth transition for hover */
+    display: inline-block;
+    background-color: #007aff;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-/* Button Hover Effect */
 .cta-btn:hover {
-    background-color: #005bb5; /* Darker shade for hover effect */
+    background-color: #005bb5;
+}
+.sample-quizzes {
+    background-color: white; /* Background color for the box */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center the text */
+    margin: 20px 0; /* Margin above and below the box */
 }
 
+.sample-quizzes h1 {
+    font-size: 50px; /* Font size for the heading */
+   
+    color: #3a518b; /* Text color */
+}
 
+/* Quiz Section */
+#quizzes {
+    padding: 60px 50px;
+    background: linear-gradient(to bottom right, #ff5764, #3a518b);
+}
+
+/* Quiz Container */
+.quiz-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center the items */
+    gap: 30px; /* Space between the boxes */
+}
+
+/* Individual Quiz Box */
+.quiz {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+    width: 30%; /* Adjust width to 30% for three boxes in a row */
+    height: 250px; /* Fixed height for consistency */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Increase the hover effect with darker shadow */
+.quiz:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Quiz Icon - Centered and Large */
+.quiz-icon {
+    width: 100px; /* Adjusted size for better visibility */
+    height: 100px; /* Ensure square shape */
+    margin-bottom: 10px; /* Adjust margin for better spacing */
+    display: block;
+}
+
+/* Quiz Title */
+.quiz h3 {
+    font-size: 40px; /* Adjusted font size */
+    color: #000000;
+    margin: 5px 0; /* Adjust margin for better spacing */
+}
+
+/* Quiz Description */
+.quiz p {
+    font-size: 14px; /* Adjusted font size */
+    color: #555;
+    margin-bottom: 10px; /* Adjust margin for better spacing */
+}
+
+/* Quiz Button */
+.quiz-btn {
+    background-color: #007aff;
+    color: white;
+    padding: 10px 100px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px; /* Adjusted font size */
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.quiz-btn:hover {
+    background-color: #005bb5;
+}
+
+/* Responsive Design for Quiz Boxes */
+@media (max-width: 900px) {
+    .quiz {
+        width: 45%; /* Two boxes per row on medium screens */
+        height: 250px; /* Maintain height for consistency */
+    }
+}
+
+@media (max-width: 600px) {
+    .quiz {
+        width: 90%; /* One box per row on smaller screens */
+        height: 250px; /* Maintain height for consistency */
+    }
+}
+/* Footer Styles */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to right, #007aff, #ff5764); /* Full width footer gradient */
+}
+
+/* Scrolling Banner */
+.scrolling-banner {
+    background: #3a518b; /* Dark background for scrolling banner */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%; /* Ensure it spans full width */
+    position: fixed;
+    bottom: 0;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    #hero {
+        flex-direction: column;
+    }
+
+    .hero-graphic img {
+        width: 100%;
+    }
+
+    .feature-container {
+        flex-direction: column;
+    }
+
+    .quiz-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .quiz {
+        width: 100%;
+    }
+}
 /* Footer Styles */
 footer {
     padding: 20px;
@@ -201,37 +363,29 @@ footer {
 
 /* Scrolling Banner */
 .scrolling-banner {
-    background-color: #3a518b; /* Primary color */
-    color: white; /* Text color for scrolling banner */
-    padding: 10px;
-    text-align: center;
-    white-space: nowrap; /* Prevent text wrap */
-    overflow: hidden; /* Hide overflow */
-    width: 100%;
+    background: linear-gradient(to right, #3a518b, #5a70b8); /* Subtle gradient for visual appeal */
+    color: white;
+    padding: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100vw; /* Full screen width */
     position: fixed;
-    bottom: 0; /* Fixed at the bottom */
+    bottom: 0;
+    left: 0; /* Ensure it starts from the left side of the screen */
+    z-index: 9999; /* Stay above other elements */
 }
 
+/* Scrolling Text */
 .scrolling-banner p {
     display: inline-block;
-    animation: scroll 10s linear infinite; /* Scrolling animation */
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 100%; /* Start off-screen */
+    animation: scroll 15s linear infinite; /* Smooth scrolling */
 }
 
 /* Animation Keyframes */
 @keyframes scroll {
-    0% { transform: translateX(100%); } /* Start from right */
-    100% { transform: translateX(-100%); } /* End at left */
-}
-
-/* Features Section Title */
-#features {
-    background: #ffffff; /* White background for a clean look */
-    padding: 60px 50px; /* Spacious padding */
-    text-align: center; /* Center text for features */
-}
-
-.features-title h1 {
-    font-size: 36px; /* Font size for features title */
-    font-weight: bold;
-    color: #3a518b; /* Match the theme */
+    0% { transform: translateX(100%); } /* Start from the right */
+    100% { transform: translateX(-100%); } /* End at the left */
 }
