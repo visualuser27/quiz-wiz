@@ -9,16 +9,18 @@
 </head>
 <body>
     <header>
+        <div class="logo">QuizWiz</div>
         <nav>
-            <div class="logo">QUIZ-WIZ</div>
             <ul>
-                <li><a href="#">Workshops</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
                 <li><a href="#">Courses</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Sign Up</a></li>
-                <li><a href="./quizzes/quiz1.html" target="_blank">Try It Out</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="#">About</a></li>
             </ul>
-            <a href="#" class="enroll-btn">ENROLL NOW</a>
+            <!-- Create Quiz Button -->
+            <li><a href="#generate-quiz" class="generate-quiz-btn">Generate your own quiz!</a></li>
+        </ul>
         </nav>
     </header>
     
@@ -62,6 +64,15 @@
         </section>
         <div class="sample-quizzes">
             <h1>Try Our Sample Quizzes</h1>
+        </div>
+        <div class="quiz-categories">
+            <button class="filter-btn" data-category="math">Math</button>
+            <button class="filter-btn" data-category="science">Science</button>
+            <button class="filter-btn" data-category="general">General Knowledge</button>
+        </div>
+        
+        <div class="quiz-list">
+            <!-- List of quizzes goes here -->
         </div>
         
         <section id="quizzes">
@@ -110,6 +121,55 @@
                 </div>
             </div>
         </section>
+        <div class="white-box-top"></div>
+
+        <section id="quizzes">
+            <div class="sample-quizzes">
+                <h1>Ready to Test Your Knowledge?</h1>
+                <div class="quiz-container">
+                    <!-- Your quiz cards go here -->
+                </div>
+            </div>
+        </section>
+        
+        <div class="white-box-bottom"></div>
+        <!-- FAQ Section -->
+        <section id="faq">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Can I create my own quiz on this platform?</h3>
+                    <div class="faq-answer">
+                        <p>Yes! You can easily create your own quiz using our simple quiz creation tool. Just click on the "Generate your own quiz!" button in the navigation bar to get started.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-user"></i> Is registration required to take quizzes?</h3>
+                    <div class="faq-answer">
+                        <p>No, you can take quizzes without registering. However, creating an account lets you save your progress and track your results.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-trophy"></i> Are there rewards for completing quizzes?</h3>
+                    <div class="faq-answer">
+                        <p>Yes, we have a leaderboard system where top performers are recognized, and you can earn badges for completing specific milestones!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-mobile-alt"></i> Can I access quizzes on mobile devices?</h3>
+                    <div class="faq-answer">
+                        <p>Absolutely! Our platform is mobile-friendly and works seamlessly on smartphones and tablets.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-shield-alt"></i> How is my data protected?</h3>
+                    <div class="faq-answer">
+                        <p>We prioritize your data security with encryption and privacy-focused settings. Check our privacy policy for more details.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         
     </main>
 
