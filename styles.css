@@ -283,13 +283,13 @@ footer {
     display: inline-block;
     font-size: 20px;
     font-weight: bold;
-    padding-left: 100%;
-    animation: scroll 15s linear infinite;
-}
+    padding-left: 100%; /* Start off-screen */
+    animation: scroll 15s linear infinite; /* Smooth scrolling */
+}   
 
 @keyframes scroll {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+    0% { transform: translateX(0); } /* Start from the right */
+    100% { transform: translateX(-100%); } /* End at the left */
 }
 
 /* CTA Banner */
