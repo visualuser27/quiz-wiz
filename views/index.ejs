@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz-Wiz</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js"></script>
 </head>
 <body>
     <header>
@@ -16,10 +16,20 @@
                 <li><a href="#">Courses</a></li>
                 <li><a href="#">Login</a></li>
                 <li><a href="#">Sign Up</a></li>
-                <li><a href="./quizzes/quiz1.html" target="_blank">Try It Out</a></li>
+                <li><a href="/Quiz/quizzes/demo.html" target="_blank">Try It Out</a></li>
             </ul>
             <a href="#" class="enroll-btn">ENROLL NOW</a>
         </nav>
+        <div class="login-data">
+        <h1>Hi <%= name %></h1>
+        <form action="/logout?_method=DELETE" method="POST">
+            <button type="submit" class="logout">
+                <p>LOGOUT</p>
+                <img src="/IMAGES/logout_logo.png" alt="logout">
+            </button>
+        </form>
+        </div>
+        
     </header>
     
 
@@ -29,10 +39,10 @@
             <div class="hero-content">
                 <h1>CURATE THE QUIZ OF YOUR CHOICE</h1>
                 <p>Generate a quiz of your own and learn effectively</p>
-                <a href="quiz.html" class="cta-btn">Explore sample quizzes <span>&#8594;</span></a>
+                <a href="/Quiz/quiz.html" class="cta-btn">Explore sample quizzes <span>&#8594;</span></a>
             </div>
             <div class="hero-graphic">
-                <img src="IMAGES/child_studying_icon.png" alt="Child Studying" />
+                <img src="/IMAGES/child_studying_icon.png" alt="Child Studying" />
             </div>
         </section>
         <section id="features">
@@ -42,19 +52,19 @@
           
             <div class="feature-container">
                 <div class="feature">
-                    <img src="IMAGES/curate_quiz_icon.png" alt="Curate Quiz Icon" />
+                    <img src="/IMAGES/curate_quiz_icon.png" alt="Curate Quiz Icon" />
                     <h2>Curate Quizzes</h2>
                     <p>Create and customize your quizzes with ease, tailored to any subject or audience.</p>
                 </div>
         
                 <div class="feature">
-                    <img src="IMAGES/secure_environment_icon.png" alt="Data Security Icon" />
+                    <img src="/IMAGES/secure_environment_icon.png" alt="Data Security Icon" />
                     <h2>Secure Environment</h2>
                     <p>Ensure a secure quiz environment with features like screenshot prevention and screen-switch detection.</p>
                 </div>
         
                 <div class="feature">
-                    <img src="IMAGES/detailed_results_icon.png" alt="Detailed Solutions Icon" />
+                    <img src="/IMAGES/detailed_results_icon.png" alt="Detailed Solutions Icon" />
                     <h2>Detailed Results</h2>
                     <p>Get in-depth results and feedback after each quiz, helping you learn and improve faster.</p>
                 </div>
@@ -68,42 +78,42 @@
             <div class="quiz-container">
                 <!-- Quiz 1 -->
                 <div class="quiz">
-                    <img src="IMAGES/python_quiz.png" alt="python_logo_quiz" class="quiz-icon">
+                    <img src="/IMAGES/python_quiz.png" alt="python_logo_quiz" class="quiz-icon">
                     <h1>Basic of Python</h1>
                     <p>Short description about the subject and quiz.</p>
                     <a href="#" class="quiz-btn">Attempt the Quiz</a>
                 </div>
                 <!-- Quiz 2 -->
                 <div class="quiz">
-                    <img src="IMAGES/artificial_intelligence.png" alt="Subject Icon" class="quiz-icon">
+                    <img src="/IMAGES/artificial_intelligence.png" alt="Subject Icon" class="quiz-icon">
                     <h1>Artificial Intelligence</h1>
                     <p>Short description about the subject and quiz.</p>
                     <a href="#" class="quiz-btn">Attempt the Quiz</a>
                 </div>
                 <!-- Quiz 3 -->
                 <div class="quiz">
-                    <img src="IMAGES/c++.png" alt="Subject Icon" class="quiz-icon">
+                    <img src="/IMAGES/c++.png" alt="Subject Icon" class="quiz-icon">
                     <h1>Basics of C++</h1>
                     <p>Short description about the subject and quiz.</p>
                     <a href="#" class="quiz-btn">Attempt the Quiz</a>
                 </div>
                 <!-- Quiz 4 -->
                 <div class="quiz">
-                    <img src="IMAGES/html.png" alt="Subject Icon" class="quiz-icon">
+                    <img src="/IMAGES/html.png" alt="Subject Icon" class="quiz-icon">
                     <h1>HTML</h1>
                     <p>Short description about the subject and quiz.</p>
                     <a href="#" class="quiz-btn">Attempt the Quiz</a>
                 </div>
                 <!-- Quiz 5 -->
                 <div class="quiz">
-                    <img src="IMAGES/chemistry.png" alt="Subject Icon" class="quiz-icon">
+                    <img src="/IMAGES/chemistry.png" alt="Subject Icon" class="quiz-icon">
                     <h1>Chemistry</h1>
                     <p>Short description about the subject and quiz.</p>
                     <a href="#" class="quiz-btn">Attempt the Quiz</a>
                 </div>
                 <!-- Quiz 6 -->
                 <div class="quiz">
-                    <img src="IMAGES/operating_system.png" alt="Subject Icon" class="quiz-icon">
+                    <img src="/IMAGES/operating_system.png" alt="Subject Icon" class="quiz-icon">
                     <h1>Operating System</h1>
                     <p>Short description about the subject and quiz.</p>
                     <a href="#" class="quiz-btn">Attempt the Quiz</a>

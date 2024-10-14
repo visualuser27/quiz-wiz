@@ -9,6 +9,8 @@
 body {
     font-family: 'Poppins', Arial, sans-serif;
     background: linear-gradient(to right, #ff5764, #007aff); /* Consistent gradient across the body */
+    background-attachment: fixed;
+    background-size: cover;
     color: #333;
 }
 
@@ -17,7 +19,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     background-color: white;
 }
 
@@ -43,12 +44,39 @@ nav ul {
 
 nav ul li {
     margin-left: 20px;
+    transition: transform 0.3s;
+    border-radius: 10px;
+    padding: 5px;
+}
+nav ul li:hover{
+    transform: scale(1.05);
 }
 
 nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+}
+.login-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5px 10px;
+}
+.login-data h1{
+    font-size: 28px;
+}
+.logout{
+    font-size: 10px;
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+.logout img{
+    max-width: 15px;
 }
 
 /* Enroll Now Button */
@@ -73,7 +101,6 @@ nav ul li a {
     align-items: center;
     padding: 50px;
     height: 100vh;
-    background: linear-gradient(to bottom right, #ff5764, #007bff);
 }
 
 .hero-content {
@@ -104,31 +131,18 @@ nav ul li a {
 
 /* Features Section */
 #features {
-    padding: 60px 50px;
     text-align: center;
-    background: linear-gradient(to bottom right, #007aff, #ff5764); /* Same gradient to maintain continuity */
-}
-
-.features-title {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.features-title h1 {
-    font-size: 48px; /* Increased font size for 'Features' */
-    font-weight: bold;
-    color: #3a518b;
 }
 
 .feature-container {
     display: flex;
     justify-content: space-around;
     padding: 50px;
+    margin: 60px 50px;
     background-color: rgba(255, 255, 255, 0.8);
     flex-wrap: wrap;
 }
 
-/* Feature Styles */
 .feature {
     flex: 1;
     max-width: 450px;
@@ -141,25 +155,20 @@ nav ul li a {
     transition: transform 0.3s, box-shadow 0.3s;
     margin: 20px;
 }
-#features {
-    padding: 60px 50px;
-    text-align: center;
-    background: linear-gradient(to bottom right, #007aff, #ff5764); /* Same gradient to maintain continuity */
-}
 
 .features-title {
     text-align: center;
-    margin: 20px 0;
-    max-width: 400px; /* Set a max width for the title container */
-    margin-left: auto; /* Center the box horizontally */
-    margin-right: auto; /* Center the box horizontally */
+    padding: 15px;
+    margin: 20px 0; 
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
 }
 
 .features-title h1 {
-    font-size: 70px; /* Increased font size for better visibility */
+    font-size: 50px; /* Increased font size for better visibility */
     font-weight: bold;
-    color: white; /* Changed to white for better contrast */
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Optional: Added shadow for better readability */
+    color: #3a518b; /* Changed to white for better contrast */
+    
 }
 
 .feature:hover {
@@ -171,6 +180,11 @@ nav ul li a {
     font-size: 26px;
     margin: 10px 0;
     color: #3a518b;
+}
+
+.feature img{
+    max-width: 190px; /* Image won't exceed its container's width */
+    height: auto;  
 }
 
 .feature p {
@@ -205,9 +219,9 @@ nav ul li a {
     background-color: #005bb5;
 }
 .sample-quizzes {
-    background-color: white; /* Background color for the box */
+    background-color: rgba(255, 255, 255, 0.8); /* Background color for the box */
     padding: 20px; /* Padding inside the box */
-    border-radius: 12px; /* Rounded corners */
+    /* border-radius: 12px;  Rounded corners */
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     text-align: center; /* Center the text */
     margin: 20px 0; /* Margin above and below the box */
@@ -222,7 +236,6 @@ nav ul li a {
 /* Quiz Section */
 #quizzes {
     padding: 60px 50px;
-    background: linear-gradient(to bottom right, #ff5764, #3a518b);
 }
 
 /* Quiz Container */

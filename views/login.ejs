@@ -1,0 +1,41 @@
+<% if(messages.error) { %>
+    <%= messages.error %>
+    <% } %> 
+<style>
+    body {background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(15,108,127,1) 100%); 
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+    form {background: rgb(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 250px;
+    height: 220px;
+    padding: 30px;
+    text-align: center;}
+    label { display: block;}
+    button {margin-top: 5px;
+        background: rgb(255, 255, 255, 0.8);
+        border-radius: 5px;}
+    a { display: block; 
+        color: green;
+        margin-top: 20px;
+    }
+
+</style>
+<form action="/login" method="POST">
+    <h1>Login</h1>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <button type="submit">Login</button>
+    <a href="/register">Register</a>
+</form>
