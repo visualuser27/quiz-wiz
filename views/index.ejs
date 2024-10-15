@@ -12,16 +12,16 @@
         <nav>
             <div class="logo">QUIZ-WIZ</div>
             <ul>
-                <li><a href="#">Workshops</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Sign Up</a></li>
+                <li><a href="/Quiz/cover.html">Workshops</a></li>
+                <li><a href="/Quiz/quiz.html">Courses</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Sign Up</a></li>
                 <li><a href="/Quiz/quizzes/demo.html" target="_blank">Try It Out</a></li>
             </ul>
-            <a href="#" class="enroll-btn">ENROLL NOW</a>
+            <a href="/Quiz/cover.html" class="enroll-btn">Generate Your Own Quiz</a>
         </nav>
         <div class="login-data">
-        <h1>Hi <%= name %></h1>
+        <h1>Welcome <%= name %></h1>
         <form action="/logout?_method=DELETE" method="POST">
             <button type="submit" class="logout">
                 <p>LOGOUT</p>
@@ -32,6 +32,12 @@
         
     </header>
     
+    <% if (name == 'Guest') { %>
+        <style>
+            form {display: none;}
+            header {padding: 10px 0;}
+        </style>
+    <% } %>
 
     <!-- Hero Section -->
     <main>
@@ -49,7 +55,7 @@
             <div class="features-title">
                 <h1>FEATURES</h1> <!-- Title for the features section -->
             </div>
-          
+        
             <div class="feature-container">
                 <div class="feature">
                     <img src="/IMAGES/curate_quiz_icon.png" alt="Curate Quiz Icon" />
@@ -81,42 +87,42 @@
                     <img src="/IMAGES/python_quiz.png" alt="python_logo_quiz" class="quiz-icon">
                     <h1>Basic of Python</h1>
                     <p>Short description about the subject and quiz.</p>
-                    <a href="#" class="quiz-btn">Attempt the Quiz</a>
+                    <a href="/Quiz/cover.html" class="quiz-btn">Attempt the Quiz</a>
                 </div>
                 <!-- Quiz 2 -->
                 <div class="quiz">
                     <img src="/IMAGES/artificial_intelligence.png" alt="Subject Icon" class="quiz-icon">
                     <h1>Artificial Intelligence</h1>
                     <p>Short description about the subject and quiz.</p>
-                    <a href="#" class="quiz-btn">Attempt the Quiz</a>
+                    <a href="/Quiz/cover.html" class="quiz-btn">Attempt the Quiz</a>
                 </div>
                 <!-- Quiz 3 -->
                 <div class="quiz">
                     <img src="/IMAGES/c++.png" alt="Subject Icon" class="quiz-icon">
                     <h1>Basics of C++</h1>
                     <p>Short description about the subject and quiz.</p>
-                    <a href="#" class="quiz-btn">Attempt the Quiz</a>
+                    <a href="/Quiz/cover.html" class="quiz-btn">Attempt the Quiz</a>
                 </div>
                 <!-- Quiz 4 -->
                 <div class="quiz">
                     <img src="/IMAGES/html.png" alt="Subject Icon" class="quiz-icon">
                     <h1>HTML</h1>
                     <p>Short description about the subject and quiz.</p>
-                    <a href="#" class="quiz-btn">Attempt the Quiz</a>
+                    <a href="/Quiz/cover.html" class="quiz-btn">Attempt the Quiz</a>
                 </div>
                 <!-- Quiz 5 -->
                 <div class="quiz">
                     <img src="/IMAGES/chemistry.png" alt="Subject Icon" class="quiz-icon">
                     <h1>Chemistry</h1>
                     <p>Short description about the subject and quiz.</p>
-                    <a href="#" class="quiz-btn">Attempt the Quiz</a>
+                    <a href="/Quiz/cover.html" class="quiz-btn">Attempt the Quiz</a>
                 </div>
                 <!-- Quiz 6 -->
                 <div class="quiz">
                     <img src="/IMAGES/operating_system.png" alt="Subject Icon" class="quiz-icon">
                     <h1>Operating System</h1>
                     <p>Short description about the subject and quiz.</p>
-                    <a href="#" class="quiz-btn">Attempt the Quiz</a>
+                    <a href="/Quiz/cover.html" class="quiz-btn">Attempt the Quiz</a>
                 </div>
             </div>
         </section>

@@ -65,7 +65,7 @@ nav ul li a {
     margin: 5px 10px;
 }
 .login-data h1{
-    font-size: 28px;
+    font-size: 27px;
 }
 .logout{
     font-size: 10px;
@@ -339,6 +339,8 @@ footer {
     position: fixed;
     bottom: 0;
 }
+
+
 
 /* Responsive Design for Mobile */
 @media (max-width: 600px) {
