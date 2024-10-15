@@ -79,3 +79,8 @@ ul {
     padding: 20px;
     text-align: center;
 }
+#unpause-button {
+    display: flex;
+    justify-content: center;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
