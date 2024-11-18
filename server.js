@@ -1,22 +1,22 @@
-if (process.env.NODE_ENV !== 'production'){
-    require('dotenv').config()
-}
+//import environment variables, passwords and other sensitive information from .env file
+require('dotenv').config()
+
+//importing requirements
+const express = require('express') //import express
+const app = express() //creating instance of express
+const bcrypt = require('bcrypt') //used to encrypt the user password
+const passport = require('passport') //js framework for user authentication
+const flash = require('express-flash')  //flash messages, temporary messages displayed to the user
+const session = require('express-session')  //session-management
+const methodOverride = require('method-override') //used for HTTP Methods like DELETE
+const path = require('path');   //to work with file paths
+const mysql = require('mysql2')     //for connection to mysql database
 
 
-const express = require('express')
-const app = express()
-const bcrypt = require('bcrypt')
-const passport = require('passport')
-const flash = require('express-flash')
-const session = require('express-session')
-const methodOverride = require('method-override')
-const path = require('path');
-const mysql = require('mysql2')
-
-
-app.use(express.static(path.join(__dirname, 'public')));
-app.set('views', path.join(__dirname, 'views'));
-
+//static files and views
+app.use(express.static(path.join(__dirname, 'public'))); //appends public to current directory name and serves the static files like CSS,HTML, images etc
+app.set('views', path.join(__dirname, 'views')); //tells express that template files are stored inside the views folder
+app.set('view-engine','ejs') //sets the view-engine to ejs
 
 const initializePassport = require('./passport-config') 
 const getUserByEmail = async (email) => {
@@ -41,7 +41,7 @@ app.use(passport.initialize())
 app.use(passport.session())
 app.use(methodOverride('_method'))
 
-app.set('view-engine','ejs')
+
 app.use(express.urlencoded({ extended:false }))
 
 //connection to the database 

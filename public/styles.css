@@ -20,6 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: white;
+    height: 100px;
 }
 
 header .logo {
@@ -57,16 +58,62 @@ nav ul li a {
     color: #333;
     font-weight: bold;
 }
-.login-data{
+
+/* Container to position the profile button */
+.profile-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the circular profile button */
+.profile-btn {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+/* The dropdown content (hidden by default) */
+.profile-dropdown {
+    display: none; /* Hidden initially */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    min-width: 150px;
+    text-align: left;
+}
+
+/* Links inside the dropdown */
+.profile-dropdown a {
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.profile-dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+/* 
+.profile-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin: 5px 10px;
 }
-.login-data h1{
+.profile-container h1{
     font-size: 27px;
-}
+} */
+
 .logout{
     font-size: 10px;
     display: flex;

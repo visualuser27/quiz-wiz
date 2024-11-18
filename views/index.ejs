@@ -14,20 +14,26 @@
             <ul>
                 <li><a href="/Quiz/cover.html">Workshops</a></li>
                 <li><a href="/Quiz/quiz.html">Courses</a></li>
-                <li><a href="/login">Login</a></li>
-                <li><a href="/register">Sign Up</a></li>
+                <li id="login"><a href="/login">Login</a></li>
+                <li id="login"><a href="/register">Sign Up</a></li>
                 <li><a href="/Quiz/quizzes/demo.html" target="_blank">Try It Out</a></li>
             </ul>
             <a href="/Quiz/cover.html" class="enroll-btn">Generate Your Own Quiz</a>
         </nav>
-        <div class="login-data">
-        <h1>Welcome <%= name %></h1>
-        <form action="/logout?_method=DELETE" method="POST">
-            <button type="submit" class="logout">
-                <p>LOGOUT</p>
-                <img src="/IMAGES/logout_logo.png" alt="logout">
-            </button>
-        </form>
+        <div class="profile-container">
+            <img src="profile-pic.jpg" class="profile-btn" id="profileButton">
+            <div class="profile-dropdown" id="profileDropdown">
+                <p>Username: JohnDoe</p>
+                <a href="#settings">Settings</a>
+                <a href="#logout">Logout</a>
+            </div>
+            <!-- <h1>Welcome <%= name %></h1>
+            <form action="/logout?_method=DELETE" method="POST">
+                <button type="submit" class="logout">
+                    <p>LOGOUT</p>
+                    <img src="/IMAGES/logout_logo.png" alt="logout">
+                </button>
+            </form> -->
         </div>
         
     </header>
@@ -36,6 +42,10 @@
         <style>
             form {display: none;}
             header {padding: 10px 0;}
+        </style>
+    <% } else { %>
+        <style>
+            #login {display: none;}
         </style>
     <% } %>
 
