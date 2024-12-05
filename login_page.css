@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form-box {
+    width: 380px;
+    height: 500px; /* Adjusted height for better spacing */
+    position: relative;
+    margin: 6% auto;
+    background: purple;
+    border-radius: 20px;
+    padding: 20px 15px; /* Added padding for spacing */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    overflow: hidden;
+}
+
+.button-box {
+    width: 220px;
+    margin: 20px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-weight: bold;
+    color: #ffd700; /* Bright yellow for better visibility */
+    font-size: 14px;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+/* Centered QuizWiz logo */
+.logo-box {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.logo {
+    width: 120px; /* Adjust width for logo */
+    height: auto;
+    border-radius: 10px; /* Optional for rounded edges */
+    /* box-shadow: removed to eliminate the shadow */
+}
+
+.input-group {
+    top: 160px;
+    position: absolute;
+    width: 300px;
+    transition: 0.5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 15px 0;
+    border: none;
+    border-bottom: 1px solid #fff; /* White border for contrast */
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 14px; /* Increased font size for readability */
+}
+
+.input-field::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Subtle placeholder color */
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 12px 30px; /* Better button padding */
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(255, 165, 0, 0.3); /* Subtle shadow */
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 165, 0, 0.5);
+}
+
+.checkbox {
+    margin: 30px 10px 10px 0;
+    color: white; /* Better visibility */
+    font-size: 12px;
+    display: flex; /* Align checkbox and text */
+    align-items: center;
+}
+
+.checkbox input {
+    margin-right: 5px;
+}
+
+span {
+    color: #ddd;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+    text-align: center;
+}
+
+#login {
+    left: 50px; /* Starts visible */
+    position: absolute;
+    transition: 0.5s ease;
+}
+
+#Register {
+    left: 100%; /* Starts hidden */
+    position: absolute;
+    transition: 0.5s ease;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form-box {
+    width: 380px;
+    height: 500px; /* Adjusted height for better spacing */
+    position: relative;
+    margin: 6% auto;
+    background: purple;
+    border-radius: 20px;
+    padding: 20px 15px; /* Added padding for spacing */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    overflow: hidden;
+}
+
+.button-box {
+    width: 220px;
+    margin: 20px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-weight: bold;
+    color: #ffd700; /* Bright yellow for better visibility */
+    font-size: 14px;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+/* Centered QuizWiz logo */
+.logo-box {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.logo {
+    width: 120px; /* Adjust width for logo */
+    height: auto;
+    border-radius: 10px; /* Optional for rounded edges */
+    /* box-shadow: removed to eliminate the shadow */
+}
+
+.input-group {
+    top: 160px;
+    position: absolute;
+    width: 300px;
+    transition: 0.5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 15px 0;
+    border: none;
+    border-bottom: 1px solid #fff; /* White border for contrast */
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 14px; /* Increased font size for readability */
+}
+
+.input-field::placeholder {
+    color: rgba(255, 255, 255, 0.6); /* Subtle placeholder color */
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 12px 30px; /* Better button padding */
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(255, 165, 0, 0.3); /* Subtle shadow */
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 165, 0, 0.5);
+}
+
+.checkbox {
+    margin: 30px 10px 10px 0;
+    color: white; /* Better visibility */
+    font-size: 12px;
+    display: flex; /* Align checkbox and text */
+    align-items: center;
+}
+
+.checkbox input {
+    margin-right: 5px;
+}
+
+span {
+    color: #ddd;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+    text-align: center;
+}
+
+#login {
+    left: 50px; /* Starts visible */
+    position: absolute;
+    transition: 0.5s ease;
+}
+
+#Register {
+    left: 100%; /* Starts hidden */
+    position: absolute;
+    transition: 0.5s ease;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Programming Quiz</title>
+    <link rel="stylesheet" href="c++_quiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>C++ Programming Quiz</h1>
+        <p>Test your knowledge on C++ programming concepts.</p>
+        <div id="timer">Time Left: <span id="time">09:59</span></div>
+
+        <!-- Question Box -->
+        <div id="question-container" class="question-container">
+            <!-- Question 1 -->
+            <div class="question-box">
+                <p>1. Who is the creator of C++?</p>
+                <input type="radio" name="q1" value="Dennis Ritchie"><label>Dennis Ritchie</label><br>
+                <input type="radio" name="q1" value="Bjarne Stroustrup"><label>Bjarne Stroustrup</label><br>
+                <input type="radio" name="q1" value="James Gosling"><label>James Gosling</label><br>
+                <input type="radio" name="q1" value="Guido van Rossum"><label>Guido van Rossum</label><br>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question-box">
+                <p>2. Which of the following is a valid C++ identifier?</p>
+                <input type="radio" name="q2" value="int"><label>int</label><br>
+                <input type="radio" name="q2" value="_variable"><label>_variable</label><br>
+                <input type="radio" name="q2" value="123var"><label>123var</label><br>
+                <input type="radio" name="q2" value="if"><label>if</label><br>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-box">
+                <p>3. What is the correct syntax to output "Hello, World!" in C++?</p>
+                <input type="radio" name="q3" value="cout << 'Hello, World!'"><label>cout << 'Hello, World!'</label><br>
+                <input type="radio" name="q3" value="cout << \"Hello, World!\""><label>cout << "Hello, World!"</label><br>
+                <input type="radio" name="q3" value="printf('Hello, World!')"><label>printf('Hello, World!')</label><br>
+                <input type="radio" name="q3" value="System.out.println('Hello, World!')"><label>System.out.println('Hello, World!')</label><br>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question-box">
+                <p>4. What is a constructor in C++?</p>
+                <input type="radio" name="q4" value="A function called automatically"><label>A function called automatically</label><br>
+                <input type="radio" name="q4" value="A destructor"><label>A destructor</label><br>
+                <input type="radio" name="q4" value="An exception"><label>An exception</label><br>
+                <input type="radio" name="q4" value="An operator"><label>An operator</label><br>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question-box">
+                <p>5. Which of the following is not a fundamental data type in C++?</p>
+                <input type="radio" name="q5" value="int"><label>int</label><br>
+                <input type="radio" name="q5" value="char"><label>char</label><br>
+                <input type="radio" name="q5" value="float"><label>float</label><br>
+                <input type="radio" name="q5" value="string"><label>string</label><br>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question-box">
+                <p>6. What does the "new" keyword do in C++?</p>
+                <input type="radio" name="q6" value="Deletes a variable"><label>Deletes a variable</label><br>
+                <input type="radio" name="q6" value="Creates a new variable"><label>Creates a new variable</label><br>
+                <input type="radio" name="q6" value="Allocates memory dynamically"><label>Allocates memory dynamically</label><br>
+                <input type="radio" name="q6" value="Releases memory dynamically"><label>Releases memory dynamically</label><br>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question-box">
+                <p>7. What is the file extension for C++ files?</p>
+                <input type="radio" name="q7" value=".cpp"><label>.cpp</label><br>
+                <input type="radio" name="q7" value=".java"><label>.java</label><br>
+                <input type="radio" name="q7" value=".py"><label>.py</label><br>
+                <input type="radio" name="q7" value=".cs"><label>.cs</label><br>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question-box">
+                <p>8. Which of the following is used to declare a constant in C++?</p>
+                <input type="radio" name="q8" value="let"><label>let</label><br>
+                <input type="radio" name="q8" value="constant"><label>constant</label><br>
+                <input type="radio" name="q8" value="const"><label>const</label><br>
+                <input type="radio" name="q8" value="final"><label>final</label><br>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question-box">
+                <p>9. What does the "this" pointer represent in C++?</p>
+                <input type="radio" name="q9" value="The current object"><label>The current object</label><br>
+                <input type="radio" name="q9" value="The parent object"><label>The parent object</label><br>
+                <input type="radio" name="q9" value="A null pointer"><label>A null pointer</label><br>
+                <input type="radio" name="q9" value="The base class"><label>The base class</label><br>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question-box">
+                <p>10. What is polymorphism in C++?</p>
+                <input type="radio" name="q10" value="Ability to take multiple forms"><label>Ability to take multiple forms</label><br>
+                <input type="radio" name="q10" value="Overloading functions"><label>Overloading functions</label><br>
+                <input type="radio" name="q10" value="Inheriting classes"><label>Inheriting classes</label><br>
+                <input type="radio" name="q10" value="Writing templates"><label>Writing templates</label><br>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation">
+            <button type="button" id="prev-btn">Previous</button>
+            <button type="button" id="next-btn">Next</button>
+        </div>
+
+        <!-- End Quiz Button -->
+        <a href="c++_answers.html"><button type="button" id="end-quiz">End Quiz</button></a>
+    </div>
+
+    <script>
+        // Timer functionality
+        let timer = 600; // 10 minutes in seconds
+        const timeDisplay = document.getElementById("time");
+
+        function updateTimer() {
+            let minutes = Math.floor(timer / 60);
+            let seconds = timer % 60;
+            timeDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+            if (timer > 0) {
+                timer--;
+            } else {
+                clearInterval(timerInterval);
+                alert('Time is up!');
+            }
+        }
+        const timerInterval = setInterval(updateTimer, 1000);
+
+        // Quiz navigation
+        let currentQuestionIndex = 0;
+        const questions = document.querySelectorAll('.question-box');
+        const nextButton = document.getElementById('next-btn');
+        const prevButton = document.getElementById('prev-btn');
+
+        function showQuestion(index) {
+            questions.forEach((q, i) => {
+                q.style.display = i === index ? 'block' : 'none';
+            });
+            prevButton.style.display = index === 0 ? 'none' : 'inline-block';
+            nextButton.style.display = index === questions.length - 1 ? 'none' : 'inline-block';
+        }
+        nextButton.addEventListener('click', () => {
+            if (currentQuestionIndex < questions.length - 1) {
+                currentQuestionIndex++;
+                showQuestion(currentQuestionIndex);
+            }
+        });
+
+        prevButton.addEventListener('click', () => {
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                showQuestion(currentQuestionIndex);
+            }
+        });
+
+        // Show first question initially
+        showQuestion(currentQuestionIndex);
+    </script>
+</body>
+</html>

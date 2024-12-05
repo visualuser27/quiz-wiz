@@ -1,15 +1,17 @@
-document.querySelectorAll('.faq-item h3').forEach(item => {
-    item.addEventListener('click', () => {
-        const faqItem = item.parentElement; // Get the parent faq-item
-        faqItem.classList.toggle('active'); // Toggle the active class
-        
-        const answer = faqItem.querySelector('.faq-answer'); // Get the answer element
-        
-        // Adjust the max-height based on whether it's active
-        if (faqItem.classList.contains('active')) {
-            answer.style.maxHeight = answer.scrollHeight + "px"; // Set max-height to scrollHeight
-        } else {
-            answer.style.maxHeight = "0"; // Reset max-height
-        }
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.faq-item h3').forEach((question) => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling; // Get the answer (next sibling)
+            
+            // Toggle the 'active' class to show/hide the answer
+            answer.classList.toggle('active');
+            
+            // Check the display status and change it accordingly
+            if (answer.classList.contains('active')) {
+                answer.style.display = 'block'; // Show answer
+            } else {
+                answer.style.display = 'none'; // Hide answer
+            }
+        });
     });
 });

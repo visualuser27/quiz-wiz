@@ -266,7 +266,6 @@ footer {
     background: linear-gradient(to right, #007aff, #ff5764);
 }
 
-/* Scrolling Banner */
 .scrolling-banner {
     background: #3a518b;
     color: white;
@@ -274,9 +273,10 @@ footer {
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
+    width: 100%; /* Ensure it stretches across the screen */
+    position: fixed; /* Fixed position */
+    bottom: 0; /* Positioned at the bottom */
+    left: 0; /* Align to the left */
 }
 
 .scrolling-banner p {
@@ -331,6 +331,9 @@ footer {
 .faq-item p {
     font-size: 16px;
     color: #555;
+}
+.faq-answer {
+    display: none; /* Hide answers initially */
 }
 
 /* Responsive Design */
@@ -455,6 +458,7 @@ footer {
 
 /* Add animations to the answers */
 .faq-answer {
+     display: none; /* Hide answers initially */
     animation: fadeIn 0.5s ease-in-out;
 }
 

@@ -1,0 +1,127 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main quiz container */
+.quiz-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Quiz title */
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Quiz description */
+p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Timer */
+#timer {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Question Box */
+.question-container {
+    margin-bottom: 20px;
+}
+
+.question-box {
+    display: none;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Navigation buttons */
+.navigation {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Previous button */
+#prev-btn {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* End Quiz button */
+#end-quiz {
+    background-color: #ff5733;
+    margin-top: 30px;
+}
+
+#end-quiz:hover {
+    background-color: #e04e28;
+}
+
+/* Adjust for buttons and layout */
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* Adjust button widths */
+button, #end-quiz {
+    width: 200px;
+    margin: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .quiz-container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    #timer {
+        font-size: 1em;
+    }
+}

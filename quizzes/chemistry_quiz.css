@@ -1,0 +1,90 @@
+/* chemistry_quiz.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#timer {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.question-box {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fafafa;
+    display: none;
+}
+
+.question-box:first-of-type {
+    display: block;
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1.1em;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.end-quiz {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.end-quiz a {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.end-quiz a:hover {
+    background-color: #c0392b;
+}

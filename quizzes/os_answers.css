@@ -1,0 +1,88 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Main container */
+.answers-container {
+    width: 100%;
+    max-width: 800px; /* Max width for the quiz box */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Start from top */
+    height: auto; /* Allow container to adjust its height */
+}
+
+/* Heading */
+h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Styling for each answer box */
+.answer-box {
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+    max-width: 600px;  /* Limit the width of the answer boxes */
+    margin-left: auto;  /* Center the answer boxes */
+    margin-right: auto;  /* Center the answer boxes */
+}
+
+/* Question heading inside answer box */
+.answer-box h2 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Explanation text inside answer box */
+.answer-box p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 30px; /* Space between content and button */
+    align-self: center; /* Ensures the button is horizontally centered */
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the Back to Quiz button */
+#back-to-quiz-btn {
+    background-color: #007BFF; /* Blue background for the back button */
+    margin-top: 30px;
+}
+
+#back-to-quiz-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
