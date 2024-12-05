@@ -5,43 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz-Wiz</title>
     <link rel="stylesheet" href="/styles.css">
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">QUIZ-WIZ</div>
+            <div class="logo">QuizWiz</div>
             <ul>
-                <li><a href="/Quiz/cover.html">Workshops</a></li>
-                <li><a href="/Quiz/quiz.html">Courses</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="/Quiz/quiz.html">Quizzes</a></li>
                 <li id="login"><a href="/login">Login</a></li>
                 <li id="login"><a href="/register">Sign Up</a></li>
-                <li><a href="/Quiz/quizzes/demo.html" target="_blank">Try It Out</a></li>
+                <li><a href="/flashcards" id="flashcards">Flashcards</a></li>
+                <li><a href="/Quiz/quizzes/demo.html" target="_blank">Demo</a></li>
+                <li><a href="/Quiz/Opentdb/index.html" id="Test">Test Yourself</a></li>
             </ul>
-            <a href="/Quiz/cover.html" class="enroll-btn">Generate Your Own Quiz</a>
+            <a href="/Quiz/quizzes/user_curated/index.html" class="enroll-btn">Generate Your Own Quiz</a>
+            
         </nav>
+
         <div class="profile-container">
+            <% if (name === 'Guest') { %>
+            <% } else { %>
+                <button id="profileButton" class="profile-btn">
+                    <img src="/Images/stan_user_bg.png" alt="Profile" class="profile-pic">
+                </button>
+                <div id="profileDropdown" class="profile-dropdown hidden">
+                    <p>Welcome, <%= name %></p>
+                    <form action="/logout?_method=DELETE" method="POST">
+                        <button type="submit" class="logout">Logout</button>
+                    </form>
+                </div>
+            <% } %>
+        </div>
+        
+        <!--<div class="profile-container">
             <img src="profile-pic.jpg" class="profile-btn" id="profileButton">
             <div class="profile-dropdown" id="profileDropdown">
                 <p>Username: JohnDoe</p>
                 <a href="#settings">Settings</a>
                 <a href="#logout">Logout</a>
             </div>
-            <!-- <h1>Welcome <%= name %></h1>
+            <h1>Welcome <%= name %></h1>
             <form action="/logout?_method=DELETE" method="POST">
                 <button type="submit" class="logout">
                     <p>LOGOUT</p>
                     <img src="/IMAGES/logout_logo.png" alt="logout">
                 </button>
-            </form> -->
-        </div>
+            </form>
+        </div>-->
         
     </header>
     
     <% if (name == 'Guest') { %>
         <style>
             form {display: none;}
-            header {padding: 10px 0;}
+            #flashcards {display: none;}
+            #Test {display: none;}
         </style>
     <% } else { %>
         <style>
@@ -97,42 +118,42 @@
                     <img src="/IMAGES/python_quiz.png" alt="python_logo_quiz" class="quiz-icon">
                     <h1>Basic of Python</h1>
                     <p>Short description about the subject and quiz.</p>
-                    <a href="/Quiz/cover.html" class="quiz-btn">Attempt the Quiz</a>
+                    <a href="/Quiz/quizzes/python/rules_python.html" class="quiz-btn">Attempt the Quiz</a>
                 </div>
                 <!-- Quiz 2 -->
                 <div class="quiz">
                     <img src="/IMAGES/artificial_intelligence.png" alt="Subject Icon" class="quiz-icon">
                     <h1>Artificial Intelligence</h1>
                     <p>Short description about the subject and quiz.</p>
-                    <a href="/Quiz/cover.html" class="quiz-btn">Attempt the Quiz</a>
+                    <a href="/Quiz/quizzes/aiml/rules_ai_ml.html" class="quiz-btn">Attempt the Quiz</a>
                 </div>
                 <!-- Quiz 3 -->
                 <div class="quiz">
                     <img src="/IMAGES/c++.png" alt="Subject Icon" class="quiz-icon">
                     <h1>Basics of C++</h1>
                     <p>Short description about the subject and quiz.</p>
-                    <a href="/Quiz/cover.html" class="quiz-btn">Attempt the Quiz</a>
+                    <a href="/Quiz/quizzes/c++/rules_c++.html" class="quiz-btn">Attempt the Quiz</a>
                 </div>
                 <!-- Quiz 4 -->
                 <div class="quiz">
                     <img src="/IMAGES/html.png" alt="Subject Icon" class="quiz-icon">
                     <h1>HTML</h1>
                     <p>Short description about the subject and quiz.</p>
-                    <a href="/Quiz/cover.html" class="quiz-btn">Attempt the Quiz</a>
+                    <a href="/Quiz/quizzes/html/rules_html.html" class="quiz-btn">Attempt the Quiz</a>
                 </div>
                 <!-- Quiz 5 -->
                 <div class="quiz">
                     <img src="/IMAGES/chemistry.png" alt="Subject Icon" class="quiz-icon">
                     <h1>Chemistry</h1>
                     <p>Short description about the subject and quiz.</p>
-                    <a href="/Quiz/cover.html" class="quiz-btn">Attempt the Quiz</a>
+                    <a href="/Quiz/quizzes/chem/rules_chem.html" class="quiz-btn">Attempt the Quiz</a>
                 </div>
                 <!-- Quiz 6 -->
                 <div class="quiz">
                     <img src="/IMAGES/operating_system.png" alt="Subject Icon" class="quiz-icon">
                     <h1>Operating System</h1>
                     <p>Short description about the subject and quiz.</p>
-                    <a href="/Quiz/cover.html" class="quiz-btn">Attempt the Quiz</a>
+                    <a href="/Quiz/quizzes/os/rules_os.html" class="quiz-btn">Attempt the Quiz</a>
                 </div>
             </div>
         </section>

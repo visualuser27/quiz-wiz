@@ -20,7 +20,6 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    height: 100px;
 }
 
 header .logo {
@@ -34,6 +33,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 20px;
+    padding: 12px 20px;
 }
 
 nav ul {
@@ -45,74 +45,33 @@ nav ul {
 
 nav ul li {
     margin-left: 20px;
-    transition: transform 0.3s;
-    border-radius: 10px;
-    padding: 5px;
-}
-nav ul li:hover{
-    transform: scale(1.05);
 }
 
+/* Navigation Links */
 nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    padding: 6px; /* Add padding for better clickable area */
+    border-radius: 8px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition */
 }
 
-/* Container to position the profile button */
-.profile-container {
-    position: relative;
-    display: inline-block;
+/* Hover Effect */
+nav ul li a:hover {
+    color: #fff; /* Change text color on hover */
+    background-color: #007aff; /* Add a background color */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    transform: translateY(-3px); /* Subtle upward movement */
 }
 
-/* Style the circular profile button */
-.profile-btn {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    border: 2px solid black;
+/* Active State (Optional) */
+nav ul li a.active {
+    background-color: #ff5764; /* Highlight the active link */
+    color: #fff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow for active */
 }
 
-/* The dropdown content (hidden by default) */
-.profile-dropdown {
-    display: none; /* Hidden initially */
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: white;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 1;
-    min-width: 150px;
-    text-align: left;
-}
-
-/* Links inside the dropdown */
-.profile-dropdown a {
-    color: black;
-    padding: 8px 10px;
-    text-decoration: none;
-    display: block;
-}
-
-.profile-dropdown a:hover {
-    background-color: #f1f1f1;
-}
-
-/* 
-.profile-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 5px 10px;
-}
-.profile-container h1{
-    font-size: 27px;
-} */
 
 .logout{
     font-size: 10px;
@@ -130,7 +89,7 @@ nav ul li a {
 .enroll-btn {
     background-color: #ff5764;
     color: white;
-    padding: 12px 24px;
+    padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 50px;
@@ -139,6 +98,77 @@ nav ul li a {
 
 .enroll-btn:hover {
     background-color: #e03e4e;
+}
+
+.profile-container {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.profile-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 150px;
+    display: none;
+}
+
+.profile-dropdown p {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.profile-dropdown .logout {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.profile-dropdown .logout:hover {
+    background-color: #d32f2f;
+}
+
+/* Show the dropdown when active */
+.profile-dropdown.hidden {
+    display: none;
+}
+
+.profile-dropdown.active {
+    display: block;
+}
+
+.welcome-message {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 20px;
 }
 
 /* Hero Section */
