@@ -14,7 +14,7 @@ const mysql = require('mysql2')     //for connection to mysql database
 
 
 //static files and views
-app.use(express.static(path.join(__dirname,'public'))); //appends public to current directory name and serves the static files like CSS,HTML, images etc
+app.use(express.static(path.join(__dirname, 'public'))); //appends public to current directory name and serves the static files like CSS,HTML, images etc
 app.set('views', path.join(__dirname,'views')); //tells express that template files are stored inside the views folder
 app.set('view-engine','ejs') //sets the view-engine to ejs
 

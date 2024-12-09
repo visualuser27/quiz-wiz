@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz-Wiz</title>
-    <link rel="stylesheet" href="/styles.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -15,18 +15,18 @@
                 <li><a href="#">Home</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="/Quiz/quiz.html">Quizzes</a></li>
-                <li id="login"><a href="/login">Login</a></li>
-                <li id="login"><a href="/register">Sign Up</a></li>
-                <li><a href="/flashcards" id="flashcards">Flashcards</a></li>
                 <li><a href="/Quiz/quizzes/demo.html" target="_blank">Demo</a></li>
                 <li><a href="/Quiz/Opentdb/index.html" id="Test">Test Yourself</a></li>
+                <li><a href="login" id="Login">Login</a> </li>
+                <li><a href="register" id="Register">Register</a></li>
             </ul>
             <a href="/Quiz/quizzes/user_curated/index.html" class="enroll-btn">Generate Your Own Quiz</a>
-            
         </nav>
+    </header>
 
-        <div class="profile-container">
-            <% if (name === 'Guest') { %>
+    <!-- Conditional Styles -->
+    <div class="profile-container">
+        <% if (name === 'Guest') { %>
             <% } else { %>
                 <button id="profileButton" class="profile-btn">
                     <img src="/Images/stan_user_bg.png" alt="Profile" class="profile-pic">
@@ -38,37 +38,8 @@
                     </form>
                 </div>
             <% } %>
-        </div>
-        
-        <!--<div class="profile-container">
-            <img src="profile-pic.jpg" class="profile-btn" id="profileButton">
-            <div class="profile-dropdown" id="profileDropdown">
-                <p>Username: JohnDoe</p>
-                <a href="#settings">Settings</a>
-                <a href="#logout">Logout</a>
-            </div>
-            <h1>Welcome <%= name %></h1>
-            <form action="/logout?_method=DELETE" method="POST">
-                <button type="submit" class="logout">
-                    <p>LOGOUT</p>
-                    <img src="/IMAGES/logout_logo.png" alt="logout">
-                </button>
-            </form>
-        </div>-->
-        
-    </header>
+    </div>
     
-    <% if (name == 'Guest') { %>
-        <style>
-            form {display: none;}
-            #flashcards {display: none;}
-            #Test {display: none;}
-        </style>
-    <% } else { %>
-        <style>
-            #login {display: none;}
-        </style>
-    <% } %>
 
     <!-- Hero Section -->
     <main>
@@ -76,90 +47,146 @@
             <div class="hero-content">
                 <h1>CURATE THE QUIZ OF YOUR CHOICE</h1>
                 <p>Generate a quiz of your own and learn effectively</p>
-                <a href="/Quiz/quiz.html" class="cta-btn">Explore sample quizzes <span>&#8594;</span></a>
+                <a href="/Quiz/Opentdb/index.html" class="cta-btn">Explore sample quizzes <span>&#8594;</span></a>
             </div>
             <div class="hero-graphic">
-                <img src="/IMAGES/child_studying_icon.png" alt="Child Studying" />
+                <img src="/IMAGES/child_studying_icon.png" alt="Child Studying">
             </div>
         </section>
+
+        <!-- Features Section -->
         <section id="features">
             <div class="features-title">
-                <h1>FEATURES</h1> <!-- Title for the features section -->
+                <h1>FEATURES</h1>
             </div>
-        
             <div class="feature-container">
                 <div class="feature">
-                    <img src="/IMAGES/curate_quiz_icon.png" alt="Curate Quiz Icon" />
+                    <img src="/IMAGES/curate_quiz_icon.png" alt="Curate Quiz Icon">
                     <h2>Curate Quizzes</h2>
                     <p>Create and customize your quizzes with ease, tailored to any subject or audience.</p>
                 </div>
-        
                 <div class="feature">
-                    <img src="/IMAGES/secure_environment_icon.png" alt="Data Security Icon" />
+                    <img src="/IMAGES/secure_environment_icon.png" alt="Secure Environment Icon">
                     <h2>Secure Environment</h2>
                     <p>Ensure a secure quiz environment with features like screenshot prevention and screen-switch detection.</p>
                 </div>
-        
                 <div class="feature">
-                    <img src="/IMAGES/detailed_results_icon.png" alt="Detailed Solutions Icon" />
+                    <img src="/IMAGES/detailed_results_icon.png" alt="Detailed Results Icon">
                     <h2>Detailed Results</h2>
                     <p>Get in-depth results and feedback after each quiz, helping you learn and improve faster.</p>
                 </div>
+                <!-- New Features -->
+                <div class="feature">
+                    <img src="/IMAGES/long_paragraph_icon.png" alt="Long Text Icon">
+                    <h2>Create Quiz from Long Text</h2>
+                    <p>Generate detailed and accurate questions from long text passages.</p>
+                </div>
+                <div class="feature">
+                    <img src="/IMAGES/true_false.png" alt="True/False Icon">
+                    <h2>True/False Questions</h2>
+                    <p>Create quizzes with simple true or false questions for quick assessments.</p>
+                </div>
+                <div class="feature">
+                    <img src="/IMAGES/quiz_from_topic.png" alt="Topic Icon">
+                    <h2>Generate Quiz from Topic</h2>
+                    <p>Enter a specific topic to generate a tailored quiz.</p>
+                </div>
+                <div class="feature">
+                    <img src="/IMAGES/quiz_by_pdf.png" alt="PDF Icon">
+                    <h2>Generate Quiz from PDF</h2>
+                    <p>Upload a PDF document to automatically create quiz questions.</p>
+                </div>
+                <div class="feature">
+                    <img src="/IMAGES/youtube_to_quiz.png" alt="YouTube Icon">
+                    <h2>Generate Quiz from YouTube</h2>
+                    <p>Enter a YouTube link to create a quiz based on the video content.</p>
+                </div>
+                <div class="feature">
+                    <img src="/IMAGES/Interective_quiz.png" alt="Interactive Quiz Icon">
+                    <h2>Interactive Quizzes</h2> 
+                    <p>Create interactive quizzes with images, videos, and sound.</p>
+                </div>
             </div>
         </section>
+
+        <!-- Full-width Image Section -->
+          <section id="full-width-image"> 
+            <img src="/IMAGES/Make your study interesting.png" alt="Quiz Banner">
+            </section>
+
+        <!-- Sample Quizzes Section -->
         <div class="sample-quizzes">
             <h1>Try Our Sample Quizzes</h1>
         </div>
-        
         <section id="quizzes">
             <div class="quiz-container">
-                <!-- Quiz 1 -->
+                <!-- Repeated quiz sections for each subject -->
                 <div class="quiz">
-                    <img src="/IMAGES/python_quiz.png" alt="python_logo_quiz" class="quiz-icon">
-                    <h1>Basic of Python</h1>
+                    <script>
+                        // Select all quiz elements
+                        const quizzes = document.querySelectorAll('.quiz');
+                    
+                        // Function to add the 'zoom-in' class when an element is in view
+                        const observer = new IntersectionObserver((entries, observer) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                    // Add 'zoom-in' class to trigger animation
+                                    entry.target.classList.add('zoom-in');
+                                    // Stop observing the element once the animation has triggered
+                                    observer.unobserve(entry.target);
+                                }
+                            });
+                        }, {
+                            threshold: 0.5 // Trigger the animation when 50% of the element is in view
+                        });
+                    
+                        // Observe each quiz element
+                        quizzes.forEach(quiz => {
+                            observer.observe(quiz);
+                        });
+                    </script>
+                    
+                    <img src="/IMAGES/python_quiz.png" alt="Python Quiz Icon" class="quiz-icon">
+                    <h1>Basics of Python</h1>
                     <p>Short description about the subject and quiz.</p>
-                    <a href="/Quiz/quizzes/python/rules_python.html" class="quiz-btn">Attempt the Quiz</a>
+                    <a href="/Quiz/quizzes/python/rules_python.html" class="quiz-btn green">Attempt the Quiz</a>
                 </div>
-                <!-- Quiz 2 -->
                 <div class="quiz">
-                    <img src="/IMAGES/artificial_intelligence.png" alt="Subject Icon" class="quiz-icon">
+                    
+                    <img src="/IMAGES/artificial_intelligence.png" alt="AI Quiz Icon" class="quiz-icon">
                     <h1>Artificial Intelligence</h1>
                     <p>Short description about the subject and quiz.</p>
-                    <a href="/Quiz/quizzes/aiml/rules_ai_ml.html" class="quiz-btn">Attempt the Quiz</a>
+                    <a href="/Quiz/quizzes/aiml/rules_ai_ml.html" class="quiz-btn green">Attempt the Quiz</a>
                 </div>
-                <!-- Quiz 3 -->
                 <div class="quiz">
-                    <img src="/IMAGES/c++.png" alt="Subject Icon" class="quiz-icon">
+                    <img src="/IMAGES/c++.png" alt="C++ Quiz Icon" class="quiz-icon">
                     <h1>Basics of C++</h1>
                     <p>Short description about the subject and quiz.</p>
-                    <a href="/Quiz/quizzes/c++/rules_c++.html" class="quiz-btn">Attempt the Quiz</a>
+                    <a href="/Quiz/quizzes/c++/rules_c++.html" class="quiz-btn green">Attempt the Quiz</a>
                 </div>
-                <!-- Quiz 4 -->
                 <div class="quiz">
-                    <img src="/IMAGES/html.png" alt="Subject Icon" class="quiz-icon">
+                    <img src="/IMAGES/html.png" alt="HTML Quiz Icon" class="quiz-icon">
                     <h1>HTML</h1>
                     <p>Short description about the subject and quiz.</p>
-                    <a href="/Quiz/quizzes/html/rules_html.html" class="quiz-btn">Attempt the Quiz</a>
+                    <a href="/Quiz/quizzes/html/rules_html.html" class="quiz-btn green">Attempt the Quiz</a>
                 </div>
-                <!-- Quiz 5 -->
                 <div class="quiz">
-                    <img src="/IMAGES/chemistry.png" alt="Subject Icon" class="quiz-icon">
+                    <img src="/IMAGES/chemistry.png" alt="Chemistry Quiz Icon" class="quiz-icon">
                     <h1>Chemistry</h1>
                     <p>Short description about the subject and quiz.</p>
-                    <a href="/Quiz/quizzes/chem/rules_chem.html" class="quiz-btn">Attempt the Quiz</a>
+                    <a href="/Quiz/quizzes/chem/rules_chem.html" class="quiz-btn green">Attempt the Quiz</a>
                 </div>
-                <!-- Quiz 6 -->
                 <div class="quiz">
-                    <img src="/IMAGES/operating_system.png" alt="Subject Icon" class="quiz-icon">
+                    <img src="/IMAGES/operating_system.png" alt="Operating System Quiz Icon" class="quiz-icon">
                     <h1>Operating System</h1>
                     <p>Short description about the subject and quiz.</p>
-                    <a href="/Quiz/quizzes/os/rules_os.html" class="quiz-btn">Attempt the Quiz</a>
+                    <a href="/Quiz/quizzes/os/rules_os.html" class="quiz-btn green">Attempt the Quiz</a>
                 </div>
             </div>
         </section>
-        
     </main>
-    
+
+    <!-- Footer Section -->
     <footer>
         <div class="scrolling-banner">
             <p>CURATE | LEARN | TEST | CURATE | LEARN | TEST</p>
